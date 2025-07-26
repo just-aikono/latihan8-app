@@ -5,6 +5,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
+npx prisma migrate dev --name init
 npm run dev
 # or
 yarn dev
@@ -14,7 +15,11 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/landing](http://localhost:3000/landing) halaman publik.
+Open [http://localhost:3000/dashboard](http://localhost:3000/dashboard) halaman Hanya bisa diakses jika user sudah login (dilindungi dengan middleware).
+Open [http://localhost:3000/register](http://localhost:3000/register) halaman daftar user.
+Open [http://localhost:3000/login](http://localhost:3000/login) halaman login user.
+
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
