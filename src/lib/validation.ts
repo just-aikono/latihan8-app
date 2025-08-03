@@ -3,8 +3,8 @@ import { z } from 'zod';
 export const makananSchema = z.object({
   id: z.string().optional(),
   nama: z.string().min(1, 'Nama makanan tidak boleh kosong'),
-  porsi: z.number().min(1, 'Porsi harus lebih dari 0'),
-  jumlahKalori: z.number().min(1, 'Kalori harus lebih dari 0'),
+  porsi: z.string().min(1, 'Porsi harus lebih dari 0'),
+  jumlahKalori: z.coerce.number().min(1, 'Kalori harus lebih dari 0'),
 });
 
 export const registerSchema = z.object({

@@ -18,17 +18,18 @@ model user {
   id       String    @id @default(cuid())
   name     String?
   email    String?   @unique
-  password String?   // hanya jika kamu pakai email & password
+  password String?
+  role      String   @default("user") // atau admin, dsb.   
   image    String?
   makanan  makanan[]
-  // kamu bisa tambahkan createdAt/updatedAt jika perlu
 }
 
 model makanan {
   id           String   @id @default(uuid())
   nama         String
-  porsi        Int
+  porsi        String
   jumlahKalori Int
   userId       String
   user         user     @relation(fields: [userId], references: [id])
+  createdAt    DateTime @default(now())
 }

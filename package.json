@@ -10,14 +10,24 @@
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.10.0",
+    "@headlessui/react": "^2.2.7",
+    "@heroicons/react": "^2.2.0",
+    "@heroui/autocomplete": "^2.3.26",
+    "@heroui/button": "^2.2.24",
+    "@heroui/input": "^2.4.25",
+    "@heroui/system": "^2.4.20",
+    "@heroui/theme": "^2.4.20",
+    "@hookform/resolvers": "^5.2.1",
     "@prisma/client": "^6.12.0",
     "bcryptjs": "^3.0.2",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
     "next": "15.4.4",
     "next-auth": "^4.24.11",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "zod": "^4.0.10"
+    "react-hook-form": "^7.61.1",
+    "zod": "^4.0.14"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
